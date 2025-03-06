@@ -13,7 +13,7 @@ const myName = "Godwin";
 
 const day = 27;
 
-let sTechie = true;
+let sTechie = true
 
 let zerebel
 
