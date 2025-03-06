@@ -4,7 +4,7 @@ let myAge = 27;
 
 let sTechie = true;
 
-let zerebel
+let zerebel;
 
 let mister = null;
 
