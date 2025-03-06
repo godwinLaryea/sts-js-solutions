@@ -1,22 +1,30 @@
-// Comments can make code readable
-
-// Welcome to JavaScript
-
-/* 
-  Comments can make code readable, 
-    easy to reuse and informative 
-*/
-
+// Q4
 // Variables with different data types
 
-const myName = "Godwin";
+// Part 1; Declaring Variables
 
-const day = 27;
+let myName;
 
-let sTechie = true
+let day;
 
-let zerebel
+let sTechie;
 
+let zerebel;
+
+// Part 2; Assigning Values
+
+myName = "Godwin";
+
+day = 27;
+
+sTechie = (myName == day);
+console.log(sTechie);
+
+zerebel = null;
+
+console.log(myName, day, sTechie, zerebel);
+
+// Q6
 // Four Variables declared below with no values assigned to them
 
 let kofi
@@ -27,34 +35,62 @@ let qualification
 
 let dressCode
 
+
+// Q7
 // Four variables declared below with values assigned to them
 
-const myLocation = "Lartebiokorshie";
+let myLocation;
 
-const myQualification = "BSc. Computer Science";
+let myQualification;
 
-let myDressCode = "Casual";
+let myDressCode;
 
-let myGender = "Male";
+let myGender;
 
+// Assigning Values
+
+myLocation = "Lartebiokorshie";
+
+myQualification = "Bsc. Slightly Techie";
+
+myDressCode = "Casual";
+
+myGender = "Male";
+
+console.log(myLocation, myQualification, myDressCode, myGender);
+
+// Q8 Variables in multiple lines
 // Variables with my name, marital status, etc
 
-const firstName = "Godwin";
+let firstN = "Godwin";
 
-const lastName = "Laryea";
+let lastN = "Laryea";
 
-let maritalStatus = "Single";
+let maritalStat = "Single";
 
-let country = "Ghana";
+let county = "Ghana";
 
-let age = 27;
+let age1 = 27;
 
+console.log(firstN, lastN, maritalStat, county, age1);
+
+
+// Q9 Multiple Variables in a single line
+let firstName = "Godwin", lastName ="Laryea", maritalStatus ="Single", country ="Ghana", age = 27;
+
+console.log(firstName, lastName, maritalStatus, country, age);
+
+
+// Q10
 // Variables containing my age and your age
 
-let myAge = 27;
+let myAge;
 
-let yourAge = 30;
+let yourAge;
 
+myAge = 27;
+
+yourAge = 30;
 
 console.log(myAge, yourAge);
 

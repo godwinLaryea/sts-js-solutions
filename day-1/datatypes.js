@@ -1,19 +1,22 @@
+// Q5 Different Data types and using typeof
+
 let myName = "Godwin";
 
 let myAge = 27;
 
-let sTechie = true;
+let sTechie = (myName == myAge);
 
 let zerebel;
 
 let mister = null;
 
-typeof myName; // string
 
-typeof myAge; // number
+console.log(typeof myName); // string
 
-typeof sTechie; // boolean
+console.log(typeof myAge); // number
 
-typeof zerebel; // undefined
+console.log(typeof sTechie); // boolean
 
-typeof mister; // object
+console.log(typeof zerebel); // undefined
+
+console.log(typeof mister); // null
