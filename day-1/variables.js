@@ -55,6 +55,7 @@ let myAge = 27;
 
 let yourAge = 30;
 
+
 console.log(myAge, yourAge);
 
 
