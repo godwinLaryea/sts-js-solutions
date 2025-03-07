@@ -53,7 +53,7 @@ console.log(challenge.startsWith("30"));
 // Q22
 console.log(challenge.endsWith("JavaScript"));
 // Q23
-console.log(challenge.match("a"));
+console.log(challenge.match(/a/g));
 
 // Q24
 let firstPart = "30 Days of";
