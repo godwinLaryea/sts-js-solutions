@@ -135,7 +135,6 @@ Import countries and webTech js files
 // Q1
 import { countries } from './countries.js';
 import { webTechs } from './web_tech.js';
-
 // Q2
 
 
