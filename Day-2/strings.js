@@ -62,3 +62,4 @@ console.log(firstPart.concat(secondPart));
 
 // Q25
 console.log(challenge.repeat(2));
+
