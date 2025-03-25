@@ -5,7 +5,7 @@ const charactersArr = characters.split("");
 
 let newChar;
 
-randomChar = "";
+let randomChar = "";
 
 for (let i = 0; i <= 8; i++) {
   newChar = Math.floor(Math.random() * charactersArr.length);
@@ -19,12 +19,12 @@ console.log(randomChar);
 // numbers 0-9, letters a-f
 
 const hexChars = "0123456789ABCDEF";
-symbol = "#";
+const symbol = "#";
 
 let hexaDecimal = "";
 
-for (i = 0; i < 6; i++) {
-  randomChars = Math.floor(Math.random() * 16);
+for (let i = 0; i < 6; i++) {
+  let randomChars = Math.floor(Math.random() * 16);
   hexaDecimal += hexChars[randomChars];
 }
 
@@ -36,7 +36,7 @@ console.log(symbol + hexaDecimal);
 
 let rgb = [];
 
-for (i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
   let randomRgb = Math.floor(Math.random() * 256);
   rgb.push(randomRgb);
 }
@@ -53,6 +53,7 @@ const countries = [
   "Germany",
   "Hungary",
   "Ireland",
+  "Iceland",
   "Japan",
   "Kenya",
 ];
@@ -67,7 +68,7 @@ console.log(newCountriesArr);
 // Q5
 let countriesLength = [];
 
-for (i = 0; i < countries.length; i++) {
+for (let i = 0; i < countries.length; i++) {
   countriesLength.push(countries[i].length);
 }
 console.log(countriesLength);
@@ -80,9 +81,156 @@ let countryAbbrev = [];
 
 let countryAbbrevLength = [];
 
-for (i = 0; i < countries.length; i++) {
+for (let i = 0; i < countries.length; i++) {
   countryAbbrev.push(countries[i].slice(0, 3).toUpperCase());
   console.log(
     (countryAbbrevLength.push = `[${countries[i]}, ${countryAbbrev[i]}, ${countriesLength[i]}]`),
   );
 }
+
+// Q7
+let countryWithLand = [];
+for(let i = 0; i < countries.length; i++){
+  if(countries[i].includes("land")){
+    countryWithLand.push(countries[i]);
+  }else{
+    (`All these countries; ${countries[i]} are without land`);
+  }
+};
+console.log(countryWithLand);
+
+// Q8
+let countryEndsWithIa = [];
+
+for(let i = 0; i < countries.length; i++){
+  if(countries[i].slice(countries[i].length - 2, countries.length).includes("ia")){
+    countryEndsWithIa.push(countries[i]);
+  }else{
+    (`These countries; ${countries[i]}, do not end with "ia"`)
+  };
+}
+console.log(countryEndsWithIa);
+
+// let countryEndsWithIa = [];
+
+// for(let i = 0; i < countries.length; i++){
+//   if(countries[i].toString().endsWith("ia")){
+//     countryEndsWithIa.push(countries[i]);
+//   }else{
+//     (`These countries: ${countries[i]} do not end with "ia"`);
+//   }
+// };
+// console.log(countryEndsWithIa);
+
+ 
+
+
+// Q9
+let longestCountry = countries[0].length;
+
+for (let i = 0; i < countries.length; i++){
+  if(countries[i].length > longestCountry)
+    longestCountry = countries[i];
+}
+console.log(longestCountry);
+
+
+// Q10
+
+let countryWith5 = [];
+
+for(let i = 0; i < countries.length; i++){
+  if(countries[i].length === 5){
+    countryWith5.push(countries[i])
+  }
+}
+console.log(countryWith5);
+
+// Q11
+const webTechs = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'Redux',
+  'Node',
+  'MongoDB'
+]
+
+let longestWebTech = webTechs[0].length;
+
+for (let i = 0; i < webTechs.length; i++){
+  if(webTechs[i].length > longestWebTech){
+    longestWebTech = webTechs[i]
+  }
+}
+console.log(longestWebTech);
+
+
+// Q12
+let webTechLength = [];
+
+let webTechAndLength = [];
+
+for (let i = 0; i < webTechs.length; i++){
+  webTechLength.push(webTechs[i].length);
+  
+  webTechAndLength.push([webTechs[i], webTechLength[i]]);
+}
+console.log(webTechAndLength);
+
+// Q13
+const mernStack = ['MongoDB', 'Express', 'React', 'Node'];
+
+let acroMernStack = [];
+
+for(let i = 0; i < mernStack.length; i++){
+  acroMernStack.push(mernStack[i].slice(0, 1))
+}
+
+console.log(acroMernStack);
+
+// Q14
+console.log(webTechs);
+
+for(let i = 0; i < webTechs.length; i++){
+  console.log(webTechs[i]);
+}
+
+// Q15
+const fruits = ['banana', 'orange', 'mango', 'lemon'];
+
+const reverseFruits = []
+
+for (let i = fruits.length -1 ; i >= 0; i--){
+  reverseFruits.push(fruits[i])
+}
+
+console.log(reverseFruits);
+
+// Q16
+const fullStack = [
+  ['HTML', 'CSS', 'JS', 'React'],
+  ['Node', 'Express', 'MongoDB']
+]
+
+for(let i = 0; i < fullStack.length; i++){
+  
+  for(let j = 0; j < fullStack[i].length; j++) {  
+    console.log(fullStack[i][j]);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
